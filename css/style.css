@@ -81,10 +81,18 @@ main{
 }
 
 .navbar:hover{
-    width: 10rem;
+    width: 12rem;
 
 }
 .navbar:hover .link-text{
     display: block;
 }
 
+.fa-icon{
+    color:lightgrey;
+    transition: 200ms ease;
+}
+.fa-icon:hover{
+    color:#6649b8;
+    
+}
