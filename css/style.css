@@ -23,8 +23,8 @@ body::-webkit-scrollbar-thumb {
 @media only screen and (max-width:550px){
     .navbar{
         bottom: 0;
-        width: 100vh;
-        height: 5rem;
+        width: 100%;
+        height: 13%;
         position: fixed;
         background-color: var(--bg-primary);
         transition: width 200ms ease;
@@ -39,12 +39,24 @@ body::-webkit-scrollbar-thumb {
     }
     .nav-link{
         justify-content: center;
+        display: flex;
+        align-items: center;
+        height: 5rem;
+        color: var(--text-primary);
+        text-decoration: none;
+        filter: grayscale(100%) opacity(0.7);
+        transition: 600ms;
     }
     main{
         margin:10px;
     }
     .navbar:hover .link-text{
         display: none;
+    }
+    .nav-link svg {
+        max-width: 1.5rem;
+        min-width: 1.5rem;
+        margin: 0 1.5rem;
     }
     
     
@@ -75,6 +87,20 @@ body::-webkit-scrollbar-thumb {
         margin-left: 5rem;
         padding: 1rem;
     }
+    .nav-link{
+        display: flex;
+        align-items: center;
+        height: 5rem;
+        color: var(--text-primary);
+        text-decoration: none;
+        filter: grayscale(100%) opacity(0.7);
+        transition: 600ms;
+    }
+    .nav-link svg {
+        max-width: 2rem;
+        min-width: 2rem;
+        margin: 0 1.5rem;
+    }
 }
 
 body{
@@ -100,25 +126,14 @@ body{
     width: 100%;
     font-size: 14px;
 }
-.nav-item:last-child {
-    margin-top: auto;
+.nav-item:last-child {    margin-top: auto;
 }
 
-.nav-link{
-    display: flex;
-    align-items: center;
-    height: 5rem;
-    color: var(--text-primary);
-    text-decoration: none;
-    filter: grayscale(100%) opacity(0.7);
-    transition: 600ms;
-}
 
 .nav-link:hover{
     filter:grayscale(0%) opacity(1);
     background: var(--bg-secondary);
-    color: va(--text-secondary);
-    
+    color: va(--text-secondary);    
 
 }
 
@@ -126,13 +141,6 @@ body{
     display: none;
     margin-left: 1rem;
 }
-
-.nav-link svg {
-    max-width: 2rem;
-    min-width: 2rem;
-    margin: 0 1.5rem;
-}
-
 
 
 
